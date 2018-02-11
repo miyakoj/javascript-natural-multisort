@@ -7,12 +7,14 @@ Based on javascript-natural-sort by Jim Palmer, JavaScript Natural Multisort add
 
 Usage
 ---------------
+```javascript
 var sortedArray = jsMultisort({array: array, property: "property", insensitive: insensitive, reverse: reverse});
+```
 
-* array: the array to be sorted
-* property: the object property to sort on in string format, defaults to undefined
-* insensitive: whether or not to ignore capitalization, defaults to false
-* reverse: whether or not to sort in descending order, defaults to false
+* **array**: the array to be sorted
+* **property**: the object property to sort on in string format, defaults to undefined
+* **insensitive**: whether or not to ignore capitalization, defaults to false
+* **reverse**: whether or not to sort in descending order, defaults to false
 
 All configuration options are optional except for array. For example, if you want to sort a simple array in reverse order, you would use jsMultisort({array: array, reverse: true}).
 
@@ -20,8 +22,8 @@ All configuration options are optional except for array. For example, if you wan
 
 Tests
 ---------------
-[QUnit test suite](https://miyakoj.github.io/javascript-natural-multisort/unit-tests.html)
-[Speed tests](https://miyakoj.github.io/javascript-natural-multisort/speed-tests.html)
+* [QUnit test suite](https://miyakoj.github.io/javascript-natural-multisort/unit-tests.html)
+* [Speed tests](https://miyakoj.github.io/javascript-natural-multisort/speed-tests.html)
 
 
 ### By default - case-sensitive sorting
