@@ -35,7 +35,7 @@ Tests
 
 ### Case-insensitive sorting
 ```javascript
->>> var sortedArray = jsMultisort({array: ['a', 'B']});
+>>> var sortedArray = jsMultisort({array: ['a', 'B'], insensitive: true});
 ['a', 'B']
 ```
 
