@@ -3,7 +3,9 @@ JavaScript Natural Multisort
 
 Description
 ---------------
-Based on javascript-natural-sort by Jim Palmer, JavaScript Natural Multisort adds support for "naturally" sorting arrays of objects by a property and also for sorting an array in descending order.
+Based on [javascript-natural-sort](https://github.com/overset/javascript-natural-sort) by Jim Palmer, JavaScript Natural Multisort adds support for "naturally" sorting arrays of objects by a property and also for sorting an array in descending order.
+
+**Note:** There is also an AngularJS orderBy comparator available: [https://github.com/miyakoj/angularjs-natural-sort](https://github.com/miyakoj/angularjs-natural-sort)
 
 Usage
 ---------------
@@ -105,19 +107,19 @@ Tests
 ### Sorting a simple array of objects
 ```javascript
 >>> var array = [
-    {name: "antelope1", number: 1},
-    {name: "elephant5", number: 5},
-    {name: "jaguar10", number: 10},
-    {name: "yeti25", number: 25},
-    {name: "bear2", number: 2}
+    {name: "p1", number: 1},
+    {name: "p5", number: 5},
+    {name: "p10", number: 10},
+    {name: "p25", number: 25},
+    {name: "p2", number: 2}
 ];
 >>> var sortedArray = jsMultisort({array: array, property: "name"});
 [
-    {name: "antelope1", number: 1},
-    {name: "bear2", number: 2},
-    {name: "elephant5", number: 5},
-    {name: "jaguar10", number: 10},
-    {name: "yeti25", number: 25}
+    {name: "p1", number: 1},
+    {name: "p2", number: 2},
+    {name: "p5", number: 5},
+    {name: "p10", number: 10},
+    {name: "p25", number: 25}
 ]
 ```
 
